@@ -4,9 +4,9 @@ MYSQLDUMP=/opt/bitnami/mysql/bin/mysqldump
 #Timestamp
 TIME=`/bin/date +%d-%m-%Y-%T`
 
-DB_USER="root" #example dbusermm
-DB_PASS="LKkAitdxhsj7" #example 123password
-DB_NAME="bitnami_example" #example bitnami_example
+DB_USER="YOUR_DB_USERNAME" #example dbusermm
+DB_PASS="YOUR_DB_PASS" #example 123password
+DB_NAME="YOUR_DB_NAME" #example bitnami_example
 
 S3_BUCKET_NAME="example-backup"
 S3_BUCKET_PATH="s3://example-backup/mysqldump/" #example s3://example-backup/mysqldump/
