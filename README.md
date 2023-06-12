@@ -26,7 +26,7 @@ This script is used to backup a MySQL database and upload the backup file to an 
     ]
 }
 ```
-* Make sure you replace ``example-backup`` with your bucket name
+_Make sure you replace ``example-backup`` with your bucket name_
 2. Set the following variables in the script according to your environment:
 ```
 DB_USER: The username to access the MySQL database.
