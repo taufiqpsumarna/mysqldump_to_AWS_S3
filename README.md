@@ -50,7 +50,7 @@ The script uses a credential file (mysql-credentials.cnf) to provide secure acce
 - Make sure the AWS CLI is properly configured with the necessary credentials and permissions to access the specified S3 bucket.
 - Adjust the location of mysqldump in the MYSQLDUMP variable if it is installed in a different path.
 - Adjust the backup file compression method (gzip in this case) if needed.
-- It's recommended to schedule regular backups using a cron job or a similar mechanism, For example, to run the backup script every day at 2:00 AM, add the following line:
+- It's recommended to schedule regular backups using a cron job or a similar mechanism, For example, to run the backup script every day at 2:00 UTC TIME, add the following line:
 
 Run cronjob without logging
 ```
