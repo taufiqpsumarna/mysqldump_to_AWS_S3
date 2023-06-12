@@ -9,7 +9,24 @@ This script is used to backup a MySQL database and upload the backup file to an 
 - The necessary permissions are granted to execute the script.
 
 ### Usage
-1. Set the following variables in the script according to your environment:
+1. Install and configure AWS CLI [reference](https://www.youtube.com/watch?v=dZgLNL869YU) and make sure your IAM Policy look like this:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::example-backup",
+                "arn:aws:s3:::example-backup/*",
+            ]
+        }
+    ]
+}
+```
+2. Set the following variables in the script according to your environment:
 ```
 DB_USER: The username to access the MySQL database.
 DB_PASS: The password for the MySQL database user.
@@ -18,13 +35,13 @@ S3_BUCKET_NAME: The name of the AWS S3 bucket to upload the backup.
 S3_BUCKET_PATH: The path within the S3 bucket where the backup will be stored.
 BACKUP_DIR: The directory path where temporary backup files will be stored.
 ```
-2. Run the script:
+3. Run the script:
 ```
 $ bash backup_script.sh
 ```
-3. The script will generate a backup file named ``{DB_NAME}_{TIME}.sql.gz`` in the specified BACKUP_DIR.
-4. The backup file will be uploaded to the specified S3 bucket and path using the AWS CLI.
-5. Temporary backup files will be cleaned up from the BACKUP_DIR.
+4. The script will generate a backup file named ``{DB_NAME}_{TIME}.sql.gz`` in the specified BACKUP_DIR.
+5. The backup file will be uploaded to the specified S3 bucket and path using the AWS CLI.
+6. Temporary backup files will be cleaned up from the BACKUP_DIR.
 
 ### Notes
 The script uses a credential file (mysql-credentials.cnf) to provide secure access to the MySQL database. The file is generated automatically by the script and removed after the backup is completed.
