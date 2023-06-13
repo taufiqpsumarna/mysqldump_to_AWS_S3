@@ -5,10 +5,10 @@ MYSQLDUMP=/usr/bin/mysqldump
 TIME=`/bin/date +%d-%m-%Y-%T`
 
 DB_USER='root' #example dbusermm
-DB_PASS='WCqkG6@$d9C5' #example 123password
+DB_PASS='Your_Password' #example 123password
 
-S3_BUCKET_NAME="srv-mysql-idstar-backup"
-S3_BUCKET_PATH="s3://srv-mysql-idstar-backup/" #example s3://example-backup/mysqldump/
+S3_BUCKET_NAME="example_backup"
+S3_BUCKET_PATH="s3://example-backup/mysqldump/" #example s3://example-backup/mysqldump/
 
 
 #Backup location
