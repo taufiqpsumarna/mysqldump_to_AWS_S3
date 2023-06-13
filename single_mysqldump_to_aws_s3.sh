@@ -1,5 +1,5 @@
 #/bin/bash
-MYSQLDUMP=/opt/bitnami/mysql/bin/mysqldump
+MYSQLDUMP=/usr/bin/mysqldump
 
 #Timestamp
 TIME=`/bin/date +%d-%m-%Y-%T`
