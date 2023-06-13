@@ -54,7 +54,7 @@ echo "Checking AWS S3 connection..."
 aws s3 ls $S3_BUCKET_NAME
 
 echo "Uploading mysqldump to AWS S3"
-aws s3 cp $BACKUP_DIR/* $S3_BUCKET_PATH
+aws s3 sync $BACKUP_DIR $S3_BUCKET_PATH
 
 #Cleaning temporary file
 echo "Cleaning temporary file"
