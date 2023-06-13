@@ -11,7 +11,7 @@ DB_PASS='YOUR_DB_PASS' #example 123password
 DB_NAME='YOUR_DB_NAME' #example bitnami_example
 
 S3_BUCKET_NAME="example-backup"
-S3_BUCKET_PATH="s3://example-backup/mysqldump/" #example s3://example-backup/mysqldump/
+S3_BUCKET_PATH="s3://example-backup" #example s3://example-backup
 
 #Backup Filename
 FILENAME=${DB_NAME}_${TIME}
