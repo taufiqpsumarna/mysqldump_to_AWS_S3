@@ -1,5 +1,7 @@
 #/bin/bash
-MYSQLDUMP=/usr/bin/mysqldump
+mysqldump=/usr/bin/mysqldump
+aws=/usr/local/bin/aws
+
 
 #Timestamp
 TIME=`/bin/date +%d-%m-%Y-%T`
