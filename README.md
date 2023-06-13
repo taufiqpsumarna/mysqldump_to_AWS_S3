@@ -10,6 +10,7 @@ This script is used to backup a MySQL database and upload the backup file to an 
 
 ### Script Option
 There is two option for backup it's single & multi database backup the different is:
+ 
  A.) Using ``single_mysqldump_to_aws_s3.sh`` if you want to backup single database, the result will look like this:
  ![Alt text](img/single_mysqldump_to_aws_s3.png)
 
