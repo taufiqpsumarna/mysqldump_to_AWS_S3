@@ -14,7 +14,7 @@ There is two option for backup it's single & multi database backup the different
  A.) Using ``single_mysqldump_to_aws_s3.sh`` if you want to backup single database, the result will look like this:
  ![Alt text](img/single_mysqldump_to_aws_s3.png)
 
- B.) Using ``multi_mysqldump_to_aws_s3.sh`` if you want to backup all database in server, the result will look like this:
+ B.) Using ``multi_mysqldump_to_aws_s3.sh`` if you want to backup all database in server and it will separate by current date folder name the result will look like this:
  ![Alt text](img/multi_mysqldump_to_aws_s3.png)
 ### Usage
 1. Install and configure AWS CLI [reference](https://www.youtube.com/watch?v=dZgLNL869YU) and make sure your IAM Policy look like this:
