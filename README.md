@@ -8,6 +8,13 @@ This script is used to backup a MySQL database and upload the backup file to an 
 - The mysqldump tool is available at /opt/bitnami/mysql/bin/mysqldump.
 - The necessary permissions are granted to execute the script.
 
+### Script Option
+There is two option for backup it's single & multi database backup the different is:
+ A.) Using ``single_mysqldump_to_aws_s3.sh`` if you want to backup single database, the result will look like this:
+ ![Alt text](img/single_mysqldump_to_aws_s3.png)
+
+ B.) Using ``multi_mysqldump_to_aws_s3.sh`` if you want to backup all database in server, the result will look like this:
+ ![Alt text](img/multi_mysqldump_to_aws_s3.png)
 ### Usage
 1. Install and configure AWS CLI [reference](https://www.youtube.com/watch?v=dZgLNL869YU) and make sure your IAM Policy look like this:
 ```
